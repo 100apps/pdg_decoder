@@ -9,9 +9,21 @@
             "console": "integratedTerminal",
             "args": [
                 "tests/pdg_files_failed"
-               
+
             ],
             "justMyCode": true
-        }   
+        }   ,
+        {
+            "name": "PDG Decoder: Debug with test files",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/pdg_dll_decoder.py",
+            "console": "integratedTerminal",
+            "args": [
+                "tests/pdg_files_failed"
+
+            ],
+            "justMyCode": true
+        }
     ]
 }
