@@ -1,0 +1,6 @@
+﻿ssid=13007163
+server=http://cxbook.nlic.net.cn:80
+path=/22/diskqmd/qmd24/09/
+pages=122
+bookname=可爱的科学藏在故事里的科学知识  专吃蚂蚁的穿山甲
+filetype=pdg

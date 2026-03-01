@@ -1,0 +1,37 @@
+[project]
+name = "pdg-decoder"
+version = "0.1.0"
+description = "Single-file pure Python PDG decoder/copier CLI"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.3.0",
+]
+
+[project.scripts]
+pdg-decoder = "pdg_decoder:main"
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "C4", "SIM", "RET", "PTH"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

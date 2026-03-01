@@ -1,0 +1,26 @@
+{
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit",
+            "source.fixAll": "explicit"
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+
+    "ruff.lint.enable": true,
+    "ruff.format.args": ["--line-length=100"],
+    "ruff.lint.args": ["--select=ALL", "--ignore=D,ANN"],
+
+    "editor.rulers": [100],
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true
+}
